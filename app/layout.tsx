@@ -7,6 +7,9 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+// 根据环境动态设置 basePath（GitHub Pages 使用 /homepage）
+const basePath = process.env.GITHUB_PAGES === 'true' ? '/homepage' : ''
+
 export const metadata: Metadata = {
   // <CHANGE> 更新元数据以匹配项目展示页面
   title: "Steven's Projects | 个人项目展示",
@@ -15,19 +18,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: `${basePath}/icon-light-32x32.png`,
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: `${basePath}/icon-dark-32x32.png`,
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: `${basePath}/icon.svg`,
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: `${basePath}/apple-icon.png`,
   },
 }
 
