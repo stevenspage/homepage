@@ -19,7 +19,8 @@ FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# 构建应用
+# 构建应用 (启用 standalone 模式)
+ENV ENABLE_STANDALONE=true
 RUN pnpm build
 
 # 生产运行阶段

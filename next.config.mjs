@@ -6,7 +6,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // output: 'standalone', // 注释掉以避免 Windows 权限问题，Docker 部署时可启用
+  // 在 Docker 环境或 CI 环境中启用 standalone 模式
+  ...(process.env.ENABLE_STANDALONE === 'true' || process.env.DOCKER_BUILD === 'true' || process.env.CI === 'true' ? {
+    output: 'standalone',
+  } : {}),
 }
 
 export default nextConfig
