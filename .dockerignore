@@ -1,0 +1,46 @@
+# 依赖
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 构建输出
+.next
+out
+dist
+build
+
+# 环境变量文件
+.env
+.env*.local
+.env.development
+.env.production
+
+# 测试
+coverage
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# 其他
+*.log
+.cache
+.turbo
+
