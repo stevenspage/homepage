@@ -1,14 +1,12 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
-      - master
+  # 仅在 Pull Request 时触发（用于代码检查）
   pull_request:
     branches:
       - main
       - master
+  # 手动触发
   workflow_dispatch:
 
 jobs:
