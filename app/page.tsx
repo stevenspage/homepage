@@ -5,8 +5,8 @@ import { Mail, MessageCircle, BookOpen, Sparkles } from "lucide-react"
 
 const projects = [
   {
-    title: "美剧精听播放器",
-    description: "勾选字幕自动复读，支持字幕批量截图+拼图",
+    title: "美剧精听播放器 Vibo Player",
+    description: "美剧台词复读，遮蔽字幕，截图，拼图",
     url: "https://vibplayer.stevenpub.com/",
     tags: ["工具", "英语学习"],
   },
@@ -123,18 +123,18 @@ export default function Home() {
                 <div className="flex items-start gap-4 mb-4">
                   <Sparkles className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">知识星球</h3>
+                    <h3 className="text-xl font-semibold mb-2">纸牌屋365天精听精读训练营</h3>
                     <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                      知识星球搜："芬哥地道商务英语"，这是一个帮助你提升职场英语沟通能力，掌握实用商务表达的社群。
+                      花一年的时间精听精读纸牌屋，每天坚持，提升英语听力、阅读、口语和写作能力。
                     </p>
                     <a
-                      href="https://t.zsxq.com/UQf2E"
+                      href="https://3m3ou.xetlk.com/s/24ww49"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                     >
                       <Sparkles className="w-4 h-4" />
-                      <span>加入知识星球</span>
+                      <span>加入训练营</span>
                     </a>
                   </div>
                 </div>
